@@ -1,0 +1,117 @@
+/* Basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Bricolage Grotesque, sans-serif;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 50px;
+    border-radius: 15px;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+    color: #1f50d8;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #576076;
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  .nav-links li a:hover {
+    text-decoration: none;
+    background-color: #f0f2f5;
+    color:#576076;
+    font-size: 1em;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  .nav-icon {
+    margin-right: 5px;
+  }
+  .nav-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .theme-toggle {
+    font-size: 1.2em;
+    margin-right: 15px;
+    border-color: transparent;
+    background-color: transparent;
+  }
+  
+  .cta-button {
+    background-color: #4770ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #1639a8;
+  }
+  
+  .mobile-menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    
+    .mobile-menu-icon {
+      display: block;
+      color: #1f50d8;
+    }
+  
+    .nav-links-mobile {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: white;
+      width: 100%;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      z-index: 1000;
+    }
+  
+    .nav-links-mobile li {
+      margin: 20px 0;
+    }
+  }
+  
